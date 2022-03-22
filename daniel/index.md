@@ -1,7 +1,7 @@
 ---
 layout: default
 title: about me
-tags: me
+tags: daniel
 author: LelViLamp
 ---
 

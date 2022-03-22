@@ -1,7 +1,7 @@
 ---
 layout: default
 title: options of saying hi
-tags: me
+tags: daniel
 author: LelViLamp
 ---
 

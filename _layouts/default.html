@@ -34,7 +34,7 @@
 				<li><a href="/"><img src="/assets/img/disk.png" />(C:)</a>
 					<ul>
 						<li><a href="/cv/" ><img src="/assets/img/folder.ico"/ title="Curriculum Vitae (CV)">cv</a></li>
-						<li><a href="/me/" ><img src="/assets/img/folder.ico"/ title="About Me">daniel</a></li>
+						<li><a href="/daniel/" ><img src="/assets/img/folder.ico"/ title="About Me">daniel</a></li>
 					</ul>
 				</li>
 				<li><a href="/" ><img src="/assets/img/disk.png" />(D:)</a>
@@ -61,10 +61,10 @@
 						<li><a href="/cv/work-experience"><img src="/assets/img/file.ico" />Work Experience</a></li>
 						<li><a href="/cv/misc"><img src="/assets/img/file.ico" />Misc</a></li>
 					</ul>
-				{% elsif page.tags contains "me" %}
+				{% elsif page.tags contains "daniel" %}
 					<ul>
-						<li><a href="/me/"><img src="/assets/img/file.ico" />About Daniel</a></li>
-						<li><a href="/me/say-hi"><img src="/assets/img/file.ico" />Say Hi!</a></li>
+						<li><a href="/daniel/"><img src="/assets/img/file.ico" />About Daniel</a></li>
+						<li><a href="/daniel/say-hi"><img src="/assets/img/file.ico" />Say Hi!</a></li>
 					</ul>
 				{% else %}
 					{{ content }}
