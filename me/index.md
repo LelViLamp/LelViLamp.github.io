@@ -1,6 +1,7 @@
 ---
-layout: me
+layout: default
 title: me
+author: LelViLamp
 ---
 
 ## Hello World
