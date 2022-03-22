@@ -9,7 +9,7 @@ author: LelViLamp
 
 You have various options of saying _hi_, indeed. The first and simplest is just sticking with _hi_. You can replace it with a simple _hello_ but also a _good day_ is appreciated. Given that I do speak a couple of languages, why not try _hallo_ or _servus_, which is perfectly fine in southern Germany and Austria also in some formal contexts. Or we can continue further south and transition to a gentle _ciao_.
 
-Please do note that I will take your choice of language as an invitation to reply in that language. If you were not to wish for that, please do let me know.
+Please do note that I will take your choice of language as an invitation to reply in that language ([if I know it](/cv/misc)). If you were not to wish for that, please do let me know.
 
 ...
 
