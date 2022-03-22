@@ -1,6 +1,7 @@
 ---
 layout: default
-title: me
+title: about me
+tags: me
 author: LelViLamp
 ---
 

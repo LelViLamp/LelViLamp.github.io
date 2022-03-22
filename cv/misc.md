@@ -2,7 +2,7 @@
 layout: default
 title: "Other Skills"
 tags: cv
-permalink: cv/misc
+author: LelViLamp
 ---
 
 

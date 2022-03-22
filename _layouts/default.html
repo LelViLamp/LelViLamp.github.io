@@ -34,6 +34,7 @@
 				<li><a href="/"><img src="/assets/img/disk.png" />(C:)</a>
 					<ul>
 						<li><a href="/cv/" ><img src="/assets/img/folder.ico"/ title="Curriculum Vitae (CV)">cv</a></li>
+						<li><a href="/me/" ><img src="/assets/img/folder.ico"/ title="About Me">daniel</a></li>
 					</ul>
 				</li>
 				<li><a href="/" ><img src="/assets/img/disk.png" />(D:)</a>
@@ -48,7 +49,7 @@
 		</div>
 		<div class="post_list">
 			{% unless page.date%}
-				{% if page.title == 'me' or page.title == "options of saying hi" or page.title == '404...' %}
+				{% if page.title == '404...' %}
 					<ul>
 						{% for post in site.posts %}
 						<li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
@@ -56,9 +57,14 @@
 					</ul>
 				{% elsif page.tags contains "cv" %}
 					<ul>
-						<li><a href="education"><img src="/assets/img/file.ico" />Education</a></li>
-						<li><a href="work"><img src="/assets/img/file.ico" />Work Experience</a></li>
-						<li><a href="misc"><img src="/assets/img/file.ico" />Misc</a></li>
+						<li><a href="/cv/education"><img src="/assets/img/file.ico" />Education</a></li>
+						<li><a href="/cv/work-experience"><img src="/assets/img/file.ico" />Work Experience</a></li>
+						<li><a href="/cv/misc"><img src="/assets/img/file.ico" />Misc</a></li>
+					</ul>
+				{% elsif page.tags contains "me" %}
+					<ul>
+						<li><a href="/me/"><img src="/assets/img/file.ico" />About Daniel</a></li>
+						<li><a href="/me/say-hi"><img src="/assets/img/file.ico" />Say Hi!</a></li>
 					</ul>
 				{% else %}
 					{{ content }}

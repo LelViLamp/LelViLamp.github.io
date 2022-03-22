@@ -1,6 +1,8 @@
 ---
 layout: default
 title: options of saying hi
+tags: me
+author: LelViLamp
 ---
 
 ## Options of Saying _Hi_
