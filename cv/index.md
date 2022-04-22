@@ -1,5 +1,5 @@
 ---
-layout: tag
+layout: page
 tags: cv
 author: LelViLamp
 ---
