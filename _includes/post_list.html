@@ -1,0 +1,30 @@
+<div class="post_list">
+    {% unless page.date %}
+        {% if page.title == '404...' %}
+            <ul>
+                {% for post in site.posts %}
+                <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        {% elsif page.tags contains "cv" %}
+            <ul>
+                <li><a href="/cv/education"><img src="/assets/img/file.ico" />Education</a></li>
+                <li><a href="/cv/work-experience"><img src="/assets/img/file.ico" />Work Experience</a></li>
+                <li><a href="/cv/misc"><img src="/assets/img/file.ico" />Misc</a></li>
+            </ul>
+        {% elsif page.tags contains "daniel" %}
+            <ul>
+                <li><a href="/daniel/"><img src="/assets/img/file.ico" />About Daniel</a></li>
+                <li><a href="/daniel/say-hi"><img src="/assets/img/file.ico" />Say Hi!</a></li>
+            </ul>
+        {% else %}
+            {{ content }}
+        {% endif %}
+    {% else %}
+        <ul>
+            {% for post in site.posts %}
+            <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    {% endunless %}
+</div>
