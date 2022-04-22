@@ -29,24 +29,7 @@
 			{% endif %}
 		</div>
 		{% include topbar.html %}
-		<div class="tag_list">
-			<ul id="tag-list">
-				<li><a href="/"><img src="/assets/img/disk.png" />(C:)</a>
-					<ul>
-						<li><a href="/cv/" ><img src="/assets/img/folder.ico"/ title="Curriculum Vitae (CV)">cv</a></li>
-						<li><a href="/daniel/" ><img src="/assets/img/folder.ico"/ title="About Me">daniel</a></li>
-					</ul>
-				</li>
-				<li><a href="/" ><img src="/assets/img/disk.png" />(D:)</a>
-					<ul>
-						{% assign tags = site.tags | sort %}
-						{% for tag in tags %}
-						<li><a href="/tag/{{ tag | first | slugify }}/" title="{{ tag[0] | replace:'-', ' ' }}"><img src="/assets/img/folder.ico" />{{ tag[0] | replace:'-', ' ' }}</a></li>
-						{% endfor %}
-					</ul>
-				</li>
-			</ul>
-		</div>
+		{% include sidebar.html %}
 		<div class="post_list">
 			{% unless page.date%}
 				{% if page.title == '404...' %}
