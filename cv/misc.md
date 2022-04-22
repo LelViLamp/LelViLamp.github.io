@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Other Skills"
 tags: cv
 author: LelViLamp
