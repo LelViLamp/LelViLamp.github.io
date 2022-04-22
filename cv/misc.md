@@ -15,4 +15,3 @@ author: LelViLamp
 - **Japanese** 🇯🇵 did not work out that successfully in the self-taught manner. While I do not care about making mistakes in Italian, I am a perfectionist in Japanese -- I do not want to offend anyone -- which holds me back from getting the exposure and experience I would need to foster the knowledge I gained over the last 4 years.
 - **French** 🇫🇷 course started in 03/2022 as I do understand a lot thanks to Italian and I just speak as much as my limited active vocabulary allows.
 - **Russian** 🇷🇺 courses from my Bachelor's at uni claim I have a B1 level. Certainly not having used it at all for years, my production is < A1 by now but sometimes I understand quite a bit.
-
