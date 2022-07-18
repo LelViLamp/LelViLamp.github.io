@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/assets/css/atom-one-light.css">
+    {% if page.title or page.title == 'me' %}
+        <title>{{ page.title }} &middot; {{ site.name }}</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/002.css">
+    {% else %}
+        <title>{{ site.name }}</title>
+		<link rel="stylesheet" type="text/css" href="/assets/css/001.css">
+    {% endif %}
+	<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/css/lelvilamp_modifications.css">
+	<link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/assets/img/favicon.ico" type="image/x-icon">
+	<script src="/assets/js/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="default_title">
+			<img src="/assets/img/mycomputer.png" />
+			{% if page.tag %}
+				<h1>{{ page.tag }}</h1>
+			{% else %}
+				<h1>{{ site.name }}</h1>
+			{% endif %}
+		</div>
+		{% include topbar.html %}
+		{% include sidebar.html %}
+		{% include post_list.html %}
+		{% include post_total.html %}
+	</div>
+	{% if page.title %}
+        <div class="content">
+			<div class="post_title">
+				<img src="/assets/img/file.png" />
+				<h1>{{  page.title  }}</h1>
+				<a href="/"><div class="btn"><span class="fa fa-times"></span></div></a>
+				<div class="btn btn_max"><span class="fa fa-window-maximize"></span></div>
+				<div class="btn"><span class="fa fa-window-minimize"></span></div>
+			</div>
+			<ul class="topbar">
+				<li>{{ page.date | date: '%-d %B %Y' }}</li>
+			</ul>
+			<div class="post_content">
+        		{{ content }}
+			</div>
+		</div>
+    {% endif %}
+	<script src="/assets/js/001.js"></script>
+	<script src="/assets/js/002.js"></script>
+	<div class="footer">
+		<p>
+			Website created using <a href="https://jekyllrb.com" target="_blank">Jekyll</a>
+			with <a href="http://github.com/h01000110" target="_blank">h01000110</a>'s 
+			<a href="https://github.com/h01000110/windows-95" target="_blank">Windows 95 Theme</a>. 
+			Its code is licensed under the <a href="https://github.com/h01000110/h01000110.github.io/blob/master/LICENSE" target="_blank">MIT Licence</a>.
+		</p>
+		<p>
+			<a href="/legal">Legal</a> &middot; <a href="/legal/privacy">Privacy</a>
+		</p>
+	</div>
+</body>
+</html>

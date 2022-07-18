@@ -1,0 +1,9 @@
+.unhighlight
+{
+    color: gray;
+}
+
+.unhighlight a, .remove_highlight a:visited
+{
+    color: gray;
+}
