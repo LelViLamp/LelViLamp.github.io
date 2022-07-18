@@ -1,12 +1,5 @@
 ---
 layout: page
-title: about me
 tags: me
-author: LelViLamp
+author: lelvilamp
 ---
-
-## Hello World
-
-My name is Daniel Göller, I am about to finish my degree in data science and working part-time as a .NET developer.
-
-よろしくお願いいたします。
