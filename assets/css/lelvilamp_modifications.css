@@ -1,9 +1,29 @@
-.unhighlight
-{
+.unhighlight {
     color: gray;
 }
 
-.unhighlight a, .remove_highlight a:visited
-{
+.unhighlight a,
+.remove_highlight a:visited {
     color: gray;
+}
+
+/* from https://stackoverflow.com/a/5379820/13044791 */
+.content a[href]:not(:where(
+    /* exclude hash only links */
+    [href^="#"],
+    /* exclude relative but not double slash only links */
+    [href^="/"]:not([href^="//"]),
+    /* exclude mailto: links */
+    [href^="mailto:"],
+)):after
+{
+  content: ' ↗️';
+}
+
+.content a[href]:where(
+    /* mailto: links */
+    [href^="mailto:"],
+):after
+{
+    content: ' 📧';
 }
