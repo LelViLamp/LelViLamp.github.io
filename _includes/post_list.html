@@ -1,23 +1,18 @@
 <div class="post_list">
     {% unless page.date %}
         {% if page.url == "/" %}
-            <div style="font-family: 'Comic Sans MS', 'Comic Sans';">
+            <div style="font-family: 'Comic Sans MS', 'Comic Sans', Chalkboard, sans;">
                 <p>
                     <img src="/assets/img/helloworld_wordart.png"
                          alt="Colourful WordArt saying 'Hello World!'"
                          title="Hello World!"
                          width="30%" />
                 </p>
-                <p>
-                    Welcome to <strong>Daniel G&ouml;ller</strong>'s website.
-                </p>
-                <p style="font-family: 'Comic Sans MS', 'Comic Sans'">
-                    He's a .NET developer in the final strides of his master's in data science and a linguistics enthusiast.
-                </p>
+                <p>Daniel G&ouml;ller</p>
+                <p>Becoming data scientist, being a .NET developer. Linguist by heart.</p>
+                <p><a href="/me/about-me">Learn more</a></p>
                 <p>&nbsp;</p>
-                <p>
-                    &lArr; Browse this website starting from the menu to the left-hand side.
-                </p>
+                <p>&lArr; Browse this website starting from the menu to the left-hand side.</p>
             </div>
         {% elsif page.title == '404...' or page.url == '/legal/' or page.url == '/legal' or page.url == '/legal/privacy' or page.url == '/legal/acknowledgements' %}
             <ul>
