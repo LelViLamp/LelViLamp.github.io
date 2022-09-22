@@ -27,3 +27,7 @@
 {
     content: ' 📧';
 }
+
+abbr {
+    border-bottom: 1px dotted grey;
+}
