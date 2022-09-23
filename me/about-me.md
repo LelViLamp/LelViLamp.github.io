@@ -15,6 +15,6 @@ My name is Daniel Göller, I am about to finish my degree in data science and am
 
 ▶️ [Have a look at my CV](/cv/) for details on what I've been doing in my life so far.
 
-🤙 I am always interested in working on new projects, acquiring knowledge, connecting and finding out what other people (= you) are doing. So, [do get in touch](/me/say-hi/).
+🤙 I am always interested in working on new projects, acquiring knowledge, connecting and finding out what other people (= you) are doing. So, [do get in touch](/me/say-hi).
 
 よろしくお願いいたします。
