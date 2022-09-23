@@ -17,7 +17,7 @@
     [href^="mailto:"],
 )):after
 {
-  content: ' ↗️';
+  content: ' ↗️';
 }
 
 .content a[href]:where(
@@ -25,7 +25,7 @@
     [href^="mailto:"],
 ):after
 {
-    content: ' 📧';
+    content: ' 📧';
 }
 
 abbr {
