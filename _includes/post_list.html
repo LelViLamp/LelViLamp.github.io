@@ -1,44 +1,45 @@
 <div class="post_list">
     {% unless page.date %}
-        {% if page.url == "/" %}
-            <div style="font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', sans-serif;">
-                <p>
-                    <img src="/assets/img/helloworld_wordart.png"
-                         alt="Colourful WordArt saying 'Hello World!'"
-                         title="Hello World!"
-                         width="30%" />
-                </p>
-                <p>Daniel G&ouml;ller</p>
-                <p>Becoming data scientist, being a .NET developer. Linguist by heart.</p>
-                <p><a href="/me/about-me">Learn more</a></p>
-                <p>&nbsp;</p>
-                <p>&lArr; Browse this website starting from the menu to the left-hand side.</p>
-            </div>
-        {% elsif page.title == '404...' or page.url == '/legal/' or page.url == '/legal' or page.url == '/legal/privacy' or page.url == '/legal/acknowledgements' %}
-            <ul>
-                {% for post in site.posts %}
-                    <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
-                {% endfor %}
-            </ul>
-        {% elsif page.tags contains "cv" %}
-            <ul>
-                <li><a href="/cv/education"><img src="/assets/img/file.ico" />education</a></li>
-                <li><a href="/cv/work"><img src="/assets/img/file.ico" />work</a></li>
-                <li><a href="/cv/languages"><img src="/assets/img/file.ico" />languages</a></li>
-            </ul>
-        {% elsif page.tags contains "me" %}
-            <ul>
-                <li><a href="/me/about-me"><img src="/assets/img/file.ico" />about me</a></li>
-                <li><a href="/me/say-hi"><img src="/assets/img/file.ico" />say hi</a></li>
-            </ul>
-        {% else %}
-            {{ content }}
-        {% endif %}
+    {% if page.url == "/" %}
+    <div style="font-family: 'Comic Sans MS', 'Comic Sans', 'Chalkboard SE', sans-serif;">
+        <p>
+            <img src="/assets/img/helloworld_wordart.png" alt="Colourful WordArt saying 'Hello World!'"
+                title="Hello World!" width="30%" />
+        </p>
+        <p>Daniel G&ouml;ller</p>
+        <p>Becoming data scientist. Linguist by heart. Experience in .NET/C#.</p>
+        <p><a href="/me/about-me">Learn more</a></p>
+        <p>&nbsp;</p>
+        <p>&lArr; Browse this website starting from the menu to the left-hand side.</p>
+    </div>
+    {% elsif page.title == '404...' or page.url == '/legal/' or page.url == '/legal' or page.url == '/legal/privacy' or
+    page.url == '/legal/acknowledgements' %}
+    <ul>
+        {% for post in site.posts %}
+        <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico"
+                    title="{{ post.title }}" />{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% elsif page.tags contains "cv" %}
+    <ul>
+        <li><a href="/cv/education"><img src="/assets/img/file.ico" />education</a></li>
+        <li><a href="/cv/work"><img src="/assets/img/file.ico" />work</a></li>
+        <li><a href="/cv/languages"><img src="/assets/img/file.ico" />languages</a></li>
+    </ul>
+    {% elsif page.tags contains "me" %}
+    <ul>
+        <li><a href="/me/about-me"><img src="/assets/img/file.ico" />about me</a></li>
+        <li><a href="/me/say-hi"><img src="/assets/img/file.ico" />say hi</a></li>
+    </ul>
     {% else %}
-        <ul>
-            {% for post in site.posts %}
-            <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico" title="{{ post.title }}" />{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
+    {{ content }}
+    {% endif %}
+    {% else %}
+    <ul>
+        {% for post in site.posts %}
+        <li><a href="{{  post.url }}" title="{{ post.title }}"><img src="/assets/img/file.ico"
+                    title="{{ post.title }}" />{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
     {% endunless %}
 </div>
