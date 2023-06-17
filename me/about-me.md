@@ -17,4 +17,4 @@ My name is Daniel Göller, I am about to finish my degree in data science workin
 
 🤙 I am always interested in working on new projects, acquiring knowledge, connecting and finding out what other people (= you) are doing. So, [do get in touch](/me/say-hi).
 
-よろしくお願いいたします。
+<span lang="ja">よろしくお願いいたします。</span>
