@@ -31,3 +31,31 @@
 abbr {
     border-bottom: 1px dotted grey;
 }
+
+table.apa {
+    border: none;
+}
+table.apa thead {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+table.apa thead tr {
+    border: none;
+}
+table.apa thead tr th {
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+}
+table.apa tbody {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+table.apa tbody tr {
+    border: none;
+}
+table.apa tbody tr td {
+    border: none;
+    padding: 5px;
+}
+
