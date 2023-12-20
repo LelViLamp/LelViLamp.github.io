@@ -1,3 +1,11 @@
+.post_content {
+    h3 {
+        font-size: 14px;
+        font-weight: 700;
+        margin: 25px 0 5px 0;
+    }
+}
+
 .unhighlight {
     color: gray;
 }
