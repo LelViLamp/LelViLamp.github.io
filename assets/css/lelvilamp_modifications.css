@@ -54,6 +54,8 @@ table.apa thead tr th {
     border: none;
     padding: 5px;
     font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
 }
 table.apa tbody {
     border-top: 2px solid black;
