@@ -7,6 +7,8 @@ author: lelvilamp
 
 ## Daniel's CV
 
+You can download a PDF version of my CV <a href="/assets/pdf/cv_de.pdf">in German</a> or <a href="/assets/pdf/cv_en.pdf">in English.
+
 Please pick your area of interest.
 
 <ul>
